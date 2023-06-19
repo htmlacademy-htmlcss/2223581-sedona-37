@@ -118,39 +118,62 @@
         <a class="button button-grey button-search link" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
       </section>
 
- <!-- Форма подбора параметров -->
-      <form class="form-search" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="arrival-form-date">
-          <label class="form-label" for="arrival-date">Дата заезда:</label>
-          <input name="arrival-date" id="arrival" type="date" placeholder="27.04.2020">
+      <!-- Форма подбора параметров -->
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-search-hotel">
 
-        </p>
-        <p class="departure-form-date">
-          <label class="form-label" for="departure-date">Дата выезда: </label>
-          <input name="departure-date" id="departure" type="date" placeholder="01.09.2023">
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title headings">Поиск гостиницы в Седоне</h2>
+          </section>
 
-        </p>
-        <p class="adults">
-          <label class="form-label" for="adults">Взрослые:</label>
-        </p>
-        <p class="counter">
-          <button type="button" class="decrease">&#8211;</button>
-          <input name="adults" id="adults" type="number" value="2">
-          <button type="button" class="increase">&#43;</button>
-        </p>
-        <p class="kids">
-          <label class="form-label" for="kids">Дети:</label>
-        </p>
-        <p class="counter">
-          <button type="button" class="decrease">&#8211;</button>
-          <input name="kids" id="kids" type="number" value="2">
-          <button type="button" class="increase">&#43;</button>
-        </p>
-        <br>
-        <input class="btn" type="submit" value="Найти">
+          <form class="search-hotel-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group search-hotel-form-date">
+              <label class="form-label" for="search-hotel-date-in">Дата заезда:</label>
+              <span class="field-date-container">
+                <input class="field-modal field-status" type="text" id="search-hotel-date-in" name="search-hotel-date" placeholder="27 апреля 2020" required>
+                <button class="calendar" type="button"></button>
+                <span class="visually-hidden">Календарь</span>
 
-      </form>
-      <br>
+              </span>
+              <span class="date-info date-invalid">Мы не можем отправить вас в прошлое.</span>
+            </p>
+
+             <p class="field-group search-hotel-form-date">
+
+              <label class="form-label" for="search-hotel-date-out">Дата выезда: </label>
+              <input class="field-modal field-status" type="text" id="search-hotel-date-out" name="search-hotel-date" placeholder="1 сентября 2021" required>
+              <button class="calendar" type="button">
+                <span class="visually-hidden">Календарь</span>
+              </button>
+
+            <span class="date-info date-valid">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+
+            <p class="adults">
+              <label class="form-label" for="adults">Взрослые:</label>
+            </p>
+            <p class="counter">
+              <button type="button" class="decrease">&#8211;</button>
+              <input name="adults" id="adults" type="number" value="2">
+              <button type="button" class="increase">&#43;</button>
+            </p>
+            <p class="kids">
+              <label class="form-label" for="kids">Дети:</label>
+            </p>
+            <p class="counter">
+              <button type="button" class="decrease">&#8211;</button>
+              <input name="kids" id="kids" type="number" value="2">
+              <button type="button" class="increase">&#43;</button>
+            </p>
+            <br>
+            <input class="btn" type="submit" value="Найти">
+          </form>
+          </div>
+         </div>
+
     </main>
 
     <!-- Форма для подписки -->
@@ -160,36 +183,42 @@
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="newsletter-email"></label>
         <div class="field-container">
-        <input class="field field-status" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-        <button class="button button-blue button-newsletter" type="submit">Подписаться</button>
+          <input class="field field-status" placeholder="email@example.com" type="email" name="newsletter-email"
+            id="newsletter-email" required>
+          <button class="button button-blue button-newsletter" type="submit">Подписаться</button>
         </div>
       </form>
     </section>
 
     <!-- Подвал -->
-    <section class="footer-social">
-      <h2 class="visually-hidden">Наши соцсети</h2>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="button" href="https://vk.com/htmlacademy">
-            <img class="vk" alt="Вконтакте">
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="https://t.me/htmlacademy ">
-            <img class="telegram" src="images/telegram.svg" width="20" height="20" alt="Телеграм">
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-            <img class="Youtube" src="images/youtube.svg" width="20" height="20" alt="Youtube">
-          </a>
-        </li>
-      </ul>
-      <p class="phone">+7 (812) 812-12-12 </p>
-      <img class="footer-social-logo" href="https://htmlacademy.ru/" src="images/Logo-footer.png "
-        alt="Логотип .html academy">
-    </section>
+    <footer class="page-footer">
+      <div class="page-footer-container">
+        <section class="footer-social">
+          <h2 class="visually-hidden">Наши соцсети</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="footer-social-link link" href="https://vk.com/htmlacademy"></a>
+              <span class="visually-hidden">Вконтакте</span>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link link" href="https://t.me/htmlacademy"></a>
+              <span class="visually-hidden">Телеграм</span>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link link" href="https://www.youtube.com/user/htmlacademyru"></a>
+              <span class="visually-hidden">Ютуб</span>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-contacts-container">
+          <h2 class="visually-hidden">Контакты</h2>
+          <address class="footer-contacts">
+            <a class="footer-contacts-phone link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </address>
+        </section>
+        <a class="footer-logo link" href="https://htmlacademy.ru/"></a>
+        <img class="footer-social-logo" src="images/logo-footer.svg " alt="Логотип.">
+      </div>
     </footer>
   </body>
 
