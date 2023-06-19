@@ -265,7 +265,7 @@
           </li>
         </ul>
       </section>
-    </main>
+
 
      <!-- Постраничный переход -->
      <div class="pagination-container">
@@ -294,18 +294,20 @@
       </div>
      </div>
 
-
-    <footer class="newsletter">
-
-      <section class="page-footer-title">Подпишитесь на рассылку</h2>
+ <!-- Форма для подписки -->
+          <section class="newsletter newsletter-inner">
+        <h2 class="newsletter-title headings">Подпишитесь на рассылку</h2>
         <p class="page-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email">Email</label>
-          <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
-            id="newsletter-email" required>
-          <button class="button newsletter-button" type="submit">Подписаться</button>
+          <div class="field-container">
+          <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+          <button class="button button-blue button-newsletter" type="submit">Подписаться</button>
+          </div>
         </form>
       </section>
+    </main>
+
       <section class="footer-social">
         <h2 class="visually-hidden">Наши соцсети</h2>
         <ul class="footer-social-list">
