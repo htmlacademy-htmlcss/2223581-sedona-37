@@ -267,70 +267,76 @@
       </section>
 
 
-     <!-- Постраничный переход -->
-     <div class="pagination-container">
-      <button class="button button-blue pagination-show-more" type="button">Загрузить ещё</button>
-      <div class="pagination-inner">
-        <ol class="pagination">
-          <li class="pagination-item">
-            <a class="button button-blue pagination-link pagination-current link">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="button button-blue pagination-link link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="button button-blue pagination-link link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="button button-blue pagination-link link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="button button-blue pagination-link link" href="#">...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="button button-blue pagination-link link" href="#">10</a>
-          </li>
-        </ol>
+      <!-- Постраничный переход -->
+      <div class="pagination-container">
+        <button class="button button-blue pagination-show-more" type="button">Загрузить ещё</button>
+        <div class="pagination-inner">
+          <ol class="pagination">
+            <li class="pagination-item">
+              <a class="button button-blue pagination-link pagination-current link">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-blue pagination-link link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-blue pagination-link link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-blue pagination-link link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-blue pagination-link link" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-blue pagination-link link" href="#">10</a>
+            </li>
+          </ol>
+        </div>
       </div>
-     </div>
 
- <!-- Форма для подписки -->
-          <section class="newsletter newsletter-inner">
+      <!-- Форма для подписки -->
+      <section class="newsletter newsletter-inner">
         <h2 class="newsletter-title headings">Подпишитесь на рассылку</h2>
         <p class="page-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email">Email</label>
           <div class="field-container">
-          <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-          <button class="button button-blue button-newsletter" type="submit">Подписаться</button>
+            <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
+              id="newsletter-email" required>
+            <button class="button button-blue button-newsletter" type="submit">Подписаться</button>
           </div>
         </form>
       </section>
     </main>
 
-      <section class="footer-social">
-        <h2 class="visually-hidden">Наши соцсети</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
-              <img class="vk" src="images/vk.svg" width="20" height="20" alt="Вконтакте">
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy ">
-              <img class="telegram" src="images/telegram.svg" width="20" height="20" alt="Телеграм">
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-              <img class="Youtube" src="images/youtube.svg" width="20" height="20" alt="Youtube">
-            </a>
-          </li>
-        </ul>
-        <p class="phone">+7 (812) 812-12-12 </p>
-        <img class="footer-social-logo" href="https://htmlacademy.ru/" src="images/Logo-footer.png "
-          alt="Логотип .html academy">
-      </section>
+    <!-- Подвал -->
+    <footer class="page-footer">
+      <div class="page-footer-container">
+        <section class="footer-social">
+          <h2 class="visually-hidden">Наши соцсети</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="footer-social-link link" href="https://vk.com/htmlacademy"></a>
+              <span class="visually-hidden">Вконтакте</span>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link link" href="https://t.me/htmlacademy"></a>
+              <span class="visually-hidden">Телеграм</span>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link link" href="https://www.youtube.com/user/htmlacademyru"></a>
+              <span class="visually-hidden">Ютуб</span>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-contacts-container">
+          <h2 class="visually-hidden">Контакты</h2>
+          <address class="footer-contacts">
+            <a class="footer-contacts-phone link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </address>
+        </section>
+        <a class="footer-logo link" href="https://htmlacademy.ru/">
+          <img class="footer-social-logo" href="https://htmlacademy.ru/" src="images/logo-footer.svg " alt="Логотип.">
     </footer>
   </body>
 
