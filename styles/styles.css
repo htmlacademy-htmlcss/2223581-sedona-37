@@ -2,9 +2,9 @@
 
     font-family: "PT Sans";
     font-style: normal;
-  font-weight: 400;
+    font-weight: 400;
 
-  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
 
   font-display: swap;
 
@@ -14,7 +14,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
   }
   html {
@@ -23,8 +23,10 @@
 
   body {
   font-family: "PT Sans", sans-serif;
+
   font-size: 16px;
   line-height: 24px;
+  font-weight: 400;
   color:#000000;
   background-color: #ffffff;
   margin: 0;
@@ -32,18 +34,10 @@
   min-width: 1200px;
 }
 
-.headings {
-  margin-top: 0;
-}
+
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
+  display: none;
 }
 
 /*Pages*/
@@ -73,6 +67,14 @@
  }
 
  .navigation-list {
+  list-style-type:none;
+  display: flex;
+  margin-right: auto;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  width: 450px;
+  flex-wrap: wrap;
 
 }
 
@@ -103,35 +105,65 @@
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  color: #000000;
+    }
+
+.vector-welcome {
+margin-top: 51px;
+
 }
 
-h2 {
-  text-align: center;
-  font-size: 22px;
-  line-height: 26px;
-}
 
 
 /*List*/
 .advantages-list {
  text-align: center;
+ list-style-type:none;
 }
 /*Title*/
 .advantages-title {
   font-weight: 700;
+  font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   margin-top: 98px;
   margin-bottom: 29px;
+  color: #000000;
+
+  }
+
+  .container-item-blue  {
+  }
+
+  .advantages-item-blue {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  color: #ffffff;
+  background-color: #83B3D3;
 }
+
 
 /*Description*/
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  background-color: inherit;
+  color: #333333;
+
+
 }
+.advices {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding-top: 184px;
+  background-color: #83B3D31F;
+  color: #333333;
+}
+
 
 .advices-title {
   margin: 0;
@@ -142,10 +174,23 @@ h2 {
   color: #000000;
 }
 
+.advantages-header {
+  text-align: center;
+ font-size: 22px;
+ font-weight: 400;
+ color: #333333;
+ line-height: 26px;
+
+}
+
 .advices-description {
+
+  margin: 0;
+  margin-bottom: 89px;
   text-align: center;
   font-size: 18px;
   line-height: 21px;
+  color: #333333;
 }
 
 .interest-title {
@@ -165,4 +210,104 @@ h2 {
   line-height: 26px;
   color: #333333;
   background-color: inherit;
+}
+
+.newsletter-index {
+  color: #ffffff;
+  background-image: url("../images/blur-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #476b86;
+  text-align: center;
+  padding-bottom: 94px;
+}
+
+.newsletter-title {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.newsletter-description {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+
+}
+
+.field {
+  font-family: "PT Sans", sans-serif;
+  line-height: 26px;
+  font-size: 18px;
+  color: #000000;
+  width: 600px;
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+  padding-left: 22px;
+  padding-right: 19px;
+  background-color: #F2F2F2;
+  box-sizing: border-box;
+}
+
+
+.footer-contacts-phone {
+  display: block;
+  margin: 0 auto;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: inherit;
+  color: #000000;
+  font-style: normal;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer-social-list {
+  list-style-type: none;
+}
+
+
+.footer-logo-htmlacademy {
+  fill: #000000;
+}
+
+/*Catalog*/
+
+.catalog-products {
+  background-image: url("../images/catalog-back.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background-color: #476b86;
+  width: 1200px;
+  padding-top: 39px;
+  margin-bottom: 44px;
+}
+
+.inner-header-title {
+  display: block;
+  font-size: 60px;
+  line-height: 68px;
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+.inner-header {
+  margin-left: 66px;
+  margin-bottom: 44px;
+}
+
+
+
+/* Хлебные крошки */
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 21px;
+  list-style-type: none;
 }
