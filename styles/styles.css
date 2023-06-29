@@ -33,8 +33,14 @@
     min-width: 1200px;
   }
 
+
   html {
     height: 100%;
+  }
+
+  .link {
+    text-decoration: none;
+    text-align: center;
   }
 
 
@@ -98,17 +104,32 @@
     margin-right: 30px;
   }
 
-  .button-grey {
-    display: flex;
-    width: 160px;
+  .button-brown {
+    display: inline-flex;
     padding: 8px 50px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     border-radius: 4px;
     background-color: #756157;
     color: #FFFFFF;
     text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  .button-blue {
+    display: inline-flex;
+    padding: 8px 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #82B3D3;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
   }
 
   .count-favorites {
@@ -155,27 +176,27 @@
     align-items: center;
   }
 
-  .welcome {
-    padding-bottom: 80px;
-  }
-
   .vector-welcome {
     margin-top: 51px;
   }
 
-  .slogan {
-    display: inline-block;
-    background-color: inherit;
-    color: #000000;
+  .advantages-slogan {
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
+    width: 620px;
+    margin: 0 auto;
+    background-color: inherit;
+    color: #000000;
     text-transform: uppercase;
-    margin-bottom: 31px;
-
+    padding-top: 60px;
   }
-  /*Advantages*/
 
+  .headings {
+    padding-bottom: 69px;
+  }
+
+  /*Advantages*/
 
   /*Header*/
   .advantages-header {
@@ -187,6 +208,7 @@
     margin-bottom: 0;
 
   }
+
   /*List*/
   .advantages-list {
     text-align: center;
@@ -216,7 +238,6 @@
     background-color: #83B3D3;
   }
 
-
   /*Description*/
   .advantages-description {
     font-size: 18px;
@@ -245,15 +266,6 @@
     color: #000000;
   }
 
-  .advantages-header {
-    text-align: center;
-    font-size: 22px;
-    font-weight: 400;
-    color: #333333;
-    line-height: 26px;
-
-  }
-
   .advices-description {
 
     margin: 0;
@@ -264,6 +276,7 @@
     color: #333333;
   }
 
+  /*Search-hotel*/
   .interest-title {
     font-size: 30px;
     line-height: 36px;
@@ -283,9 +296,81 @@
     background-color: inherit;
   }
 
+  /*Form for search-hotel*/
+  .modal-title {
+
+    color: #000000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  label {
+    color: inherit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: capitalize;
+  }
+
+  .field-modal {
+    color: #000000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  body .date-invalid {
+    color: #FF5757;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+  }
+
+  .date-valid {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+  }
+
+  input {
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  .btn {
+    padding: 8px 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #83B3D3;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    border-color: #83B3D3;
+    width: 577px;
+    padding: 18px 77px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*Newsletter */
+
   .newsletter-index {
     color: #ffffff;
-    background-image: url("../images/blur-background.jpg");
+    background-image: url("../images/background-newsletter.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-color: #476b86;
@@ -302,6 +387,7 @@
   }
 
   .newsletter-description {
+    text-align: center;
     color: #ffffff;
     font-size: 22px;
     font-weight: 400;
@@ -311,7 +397,7 @@
 
   .field {
     font-family: "PT Sans", sans-serif;
-    line-height: 26px;
+    line-height: 24px;
     font-size: 18px;
     color: #000000;
     width: 600px;
@@ -340,6 +426,21 @@
     list-style-type: none;
   }
 
+
+  .footer-logo {
+    width: 115px;
+    margin-left: 140px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .footer-social-logo {
+    display: inline-flex;
+    padding: 0px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
 
   .footer-logo-htmlacademy {
     fill: #000000;
