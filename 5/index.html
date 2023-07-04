@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <base href="https://htmlacademy-htmlcss.github.io/2223581-sedona-37/5/">
+</head>
+
+  <body>
+    <!-- Шапка -->
+    <header class="page-header">
+      <nav class="navigation">
+        <a class="navigation-logo navigation-logo-current link">
+          <!-- Логотип -->
+          <img class="navigation-logo-sedona" src="images/logo.svg" width="140" height="70" alt="Логотип Седона.">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current link">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="about.html">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-list-user">
+          <li class="navigation-user">
+            <a class="navigation-link link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-user">
+            <a class="navigation-link link" href="#">
+              <span class="visually-hidden">Избранное</span>
+              <div class="count-favorites">
+                <span class="count">12</span>
+              </div>
+            </a>
+          </li>
+          <li class="navigation-user">
+            <a class="button navigation-link button-brown link" href="#">Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container main-index">
+      <section class="welcome">
+        <div class="welcome-split">
+          <!-- Главный заголовок -->
+          <h1 class="visually-hidden">Welcome to Sedona</h1>
+          <img class="vector-welcome" alt="Welcome to the gorgeous Sedona 'because the Grand Canyon sucks'."
+            src="images/welcome.svg" width="458" height="352">
+        </div></section>
+
+
+  <!-- Преимущества -->
+
+  <section class="advantages">
+    <p class="advantages-slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+    <h2 class="advantages-header headings">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h2>
+    <ul class="advantages-list">
+      <li class="advantages-item-box">
+        <div class="advantages-item-blue">
+          <div class="container-item-blue">
+            <h3 class="advantages-title">Настоящий городок</h3>
+
+            <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+          <img class="advantages-image" src="images/photo-1.jpg" width="800" height="384" alt="Настоящий городок.">
+        </div>
+
+        <li class="advantages-item">
+          <h3 class="advantages-title headings">Небольшая площадь</h3>
+          <p class="advantages-description">Все достопримечательности находятся очень близко</p>
+        </li>
+        <li class="advantages-item">
+          <h3 class="advantages-title">Красивая дорога</h3>
+          <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
+        <li class="advantages-item">
+          <h3 class="advantages-title headings">Мало туристов</h3>
+          <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
+        </li>
+      </ul>
+
+
+          <li class="advantages-item-box advantages-item-blue">
+            <img class="advantages-image" alt="Достопремичательность-мост дьявола." src="images/photo-2.jpg" width="800"
+              height="384">
+            <div class="container-item-blue">
+              <h3 class="advantages-title">Там есть мост дьявола</h3>
+              <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
+          </li>
+           <p class="advantages-slogan">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+          <h2 class="advantages-header headings">Опытный персонал и качественное обслуживание!</h2>
+        <ul class="advantages-advices">
+          <!-- Рекомендации -->
+          <li class="advices">
+            <h4 class="advices-title advices-title-housing headings">Жилье</h4>
+            <p class="advices-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li class="advices advices-white">
+            <h4 class="advices-title advices-title-eat headings">Еда</h4>
+            <p class="advices-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="advices">
+            <h4 class="advices-title advices-title-gifts headings">Сувениры</h4>
+            <p class="advices-description">Не только китайского, но и настоящего местного производства!</p>
+          </li>
+        </ul>
+      </li>
+        </section>
+      <!-- Переход к поиску -->
+      <section class="search-hotel">
+        <h2 class="interest-title">Заинтересовались?</h2>
+        <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+          гостиниц в Седоне</p>
+        <a class="button button-brown button-search link" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+      </section>
+
+      <!-- Форма подбора параметров -->
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-search-hotel">
+
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title headings">Поиск гостиницы в Седоне</h2>
+          </section>
+
+          <form class="search-hotel-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group search-hotel-form-date">
+              <label class="form-label" for="search-hotel-date-in">Дата заезда:</label>
+              <span class="field-date-container">
+                <input class="field-modal field-status" type="text" id="search-hotel-date-in" name="search-hotel-date" placeholder="27 апреля 2020" required>
+                <button class="calendar" type="button"></button>
+                <span class="visually-hidden">Календарь</span>
+
+              </span>
+              <span class="date-info date-invalid">Мы не можем отправить вас в прошлое.</span>
+            </p>
+
+             <p class="field-group search-hotel-form-date">
+
+              <label class="form-label" for="search-hotel-date-out">Дата выезда: </label>
+              <input class="field-modal field-status" type="text" id="search-hotel-date-out" name="search-hotel-date" placeholder="1 сентября 2021" required>
+              <button class="calendar" type="button">
+                <span class="visually-hidden">Календарь</span>
+              </button>
+
+            <span class="date-info date-valid">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+
+            <p class="adults">
+              <label class="form-label" for="adults">Взрослые:</label>
+            </p>
+            <p class="counter">
+              <button type="button" class="decrease">&#8211;</button>
+              <input name="adults" id="adults" type="number" value="2">
+              <button type="button" class="increase">&#43;</button>
+            </p>
+            <p class="kids">
+              <label class="form-label" for="kids">Дети:</label>
+            </p>
+            <p class="counter">
+              <button type="button" class="decrease">&#8211;</button>
+              <input name="kids" id="kids" type="number" value="2">
+              <button type="button" class="increase">&#43;</button>
+            </p>
+            <br>
+            <input class="btn" type="submit" value="Найти">
+          </form>
+          </div>
+         </div>
+
+    </main>
+
+    <!-- Форма для подписки -->
+    <section class="newsletter newsletter-index">
+      <h2 class="newsletter-title headings">Подпишитесь на рассылку</h2>
+      <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label for="newsletter-email"></label>
+        <div class="field-container">
+          <input class="field field-status" placeholder="email@example.com" type="email" name="newsletter-email"
+            id="newsletter-email" required>
+          <button class="button button-blue button-newsletter" type="submit">Подписаться</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="page-footer">
+      <div class="page-footer-container">
+        <section class="footer-social">
+          <h2 class="visually-hidden">Наши соцсети</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="footer-social-link link" href="https://vk.com/htmlacademy"></a>
+              <span class="visually-hidden">Вконтакте</span>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link link" href="https://t.me/htmlacademy"></a>
+              <span class="visually-hidden">Телеграм</span>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link link" href="https://www.youtube.com/user/htmlacademyru"></a>
+              <span class="visually-hidden">Ютуб</span>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-contacts-container">
+          <h2 class="visually-hidden">Контакты</h2>
+          <address class="footer-contacts">
+            <a class="footer-contacts-phone link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </address>
+        </section>
+        <a class="footer-logo link" href="https://htmlacademy.ru/"></a>
+        <img class="footer-social-logo" src="images/logo-footer.svg " alt="Логотип.">
+      </div>
+    </footer>
+  </body>
+
+</html>
