@@ -160,6 +160,9 @@
     line-height: 13px;
     margin-top: 4px;
   }
+  .main-container {
+    flex-grow: 1;
+  }
 
   .main-index {
     text-align: center;
