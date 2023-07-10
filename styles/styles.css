@@ -221,6 +221,14 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
+  .button-navigation-link {
+    display: grid;
+    width: 160px;
+    padding: 8px 16px;
+    margin-left: 20px;
+    align-items: center;
+  }
+
   .navigation-link.button-brown {
     padding-left: 15px;
     padding-right: 15px;
@@ -232,6 +240,8 @@
 
   .button-brown {
     background-color: #756157;
+    width: 376px;
+
   }
 
   .button-brown:hover {
@@ -507,13 +517,14 @@
 
   .button-search {
     width: 575px;
-  margin: 0 auto;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  margin-bottom: 93px;
-  border-radius: 10px;
+    margin: 0 auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 93px;
+    border-radius: 10px;
 
   }
+
 
 
 
@@ -1123,10 +1134,11 @@
   background-color: #F2F2F2;
   border-radius: 4px;
 }
-/*
+
 .modal-container-close {
   display: none;
-}*/
+
+}
 
   /*Catalog*/
 
