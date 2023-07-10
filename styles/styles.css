@@ -241,7 +241,8 @@
   .button-brown {
     background-color: #756157;
     width: 376px;
-
+    font-size: 20px;
+    line-height: 36px;
   }
 
   .button-brown:hover {
