@@ -1156,10 +1156,10 @@
     background-size: 100% auto;
     background-repeat: no-repeat;
     color: #ffffff;
-    background-color: #476b86;
+    background-color: rgba(28, 28, 28, 0);
     margin-bottom: 50px;
-    padding-top: 39px;
-
+    height: 412px;
+    margin: 0;
   }
 
   /* Заголовок каталога */
@@ -1192,19 +1192,56 @@
     margin: 0;
     padding: 0;
     list-style: none;
-
+    position: relative;
+    font-size: 16px;
+    line-height: 21px;
+    list-style-type: none;
   }
 
-
   .breadcrumbs-item {
-    margin-left:5px;
-    margin-right:5px;
+    position: relative;
   }
 
   .breadcrumbs-link {
     position: relative;
     display: block;
-    padding: 0 5px;
+
+    margin-right: 25px;
+  }
+
+  .breadcrumbs-home {
+    margin-left: 1px;
+  }
+
+  .breadcrumbs-link:hover {
+    opacity: 0.6;
+  }
+
+  .breadcrumbs-link:focus:focus-visible {
+    opacity: 1;
+    box-shadow: 0 0 0 3px #83B3D3;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  .breadcrumbs::after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 21px;
+    top: 5px;
+    left: 23px;
+    background-image: url("../images/arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  /*<!-- Форма-фильтрации -->*/
+
+  .catalog-filter {
+
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
 
   }
 
@@ -1212,42 +1249,170 @@
     list-style: none;
   }
 
-  .catalog-filter-title {
-    font-size: 20px;
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    text-transform: capitalize;
+  .catalog-filter-item {
+    font-size: 18px;
+    line-height: 23px;
+
   }
 
-  .control {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 23px;
+  .catalog-filter-price {
+    font-family: inherit;
+    list-style: none;
+  }
+
+  .catalog-filter-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .catalog-filter-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .button-apply {
+    width: 191px;
+    margin-bottom: 32px;
+    padding: 8px 16px;
+    background-color: #82B3D3;
   }
 
   .button-reset {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #FFFFFF;
+    width: 191px;
+    padding: 8px 16px;
+    background-color: rgba(28, 28, 28, 0);
+    border: 0;
   }
+
+  /* Сортировка */
+
+  .control {
+    position: relative;
+    display: block;
+    padding-left: 39px;
+  }
+
+  /* Mark */
+  .control-mark,
+  .control-mark-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: #ffffff;
+
+  }
+
+  .catalog-filter-type .control-mark,
+  .catalog-filter-type .control-mark-radio {
+    border-radius: 50%;
+  }
+
+  .control:hover .control-mark {
+    opacity: 0.6;
+  }
+
+  .control:focus-within .control-mark,
+  .control:focus-within .control-mark-radio {
+    outline: 3px solid #83B3D3;
+  }
+
+  .control:active .control-mark {
+    opacity: 0.3;
+  }
+
+  .control-input[type="checkbox"]:checked + .control-mark::after {
+    background-image: url(../images/check-mark.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 13px;
+    height: 10px;
+    content: "";
+  }
+
+  .control-input[type="radio"]:checked + .control-mark-radio::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #3F5E72;
+    content: "";
+    border-radius: 50%;
+  }
+
 
   .catalog-sorting {
-    font-size: 30px;
+    display: flex;
+    width: 1060px;
+    height: 49px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .catalog-sorting h2 {
+
+    width: 450px;
+    margin: 0;
+    margin-right: auto;
+    padding: 6px 0;
     font-weight: 700;
+    font-size: 30px;
     line-height: 36px;
+    color: #000000;
     text-transform: uppercase;
   }
 
+  .card-view-button-container {
+    margin-left: 70px;
+  }
+
+  .card-view-button {
+    position: relative;
+    margin: 0;
+    padding: 22px;
+    background-color: #FFFFFF;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+    box-sizing: content-box;
+  }
+
+  .card-view-button:not(:last-child) {
+    margin-right: 4px;
+  }
+
+  .card-view-button-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: #000;
+
+  }
+  /*<!-- Секция с результатами фильтрации -->*/
+
   .select-control {
+    font-family: inherit;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
     color: #333333;
+    width: 288px;
+    height: 49px;
+    border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  box-sizing: border-box;
 
   }
 
