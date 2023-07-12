@@ -57,24 +57,24 @@
           </ul>
         </nav>
       </header>
-
       <main class="main-container main-inner">
         <section class="catalog-hotels">
           <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link breadcrumbs-home link" href="index.html">
-                  <svg aria-label="На главную." width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
+                  <svg class="breadcrumbs-icon" aria-label="На Главную" width="13" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z "
                       fill="#fff" />
                     <path d=" M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z " fill="#fff" />
                   </svg>
+                  <span class="visually-hidden">Главная</span>
                 </a>
               </li>
                <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link link">Гостиницы</a>
+                <a class="breadcrumbs-link">Гостиницы</a>
               </li>
             </ul>
           </header>
@@ -171,10 +171,11 @@
 
         <div class="sorting">
           <div class="catalog-sorting">
-            <h2>Найдено гостиниц: 38</h2>
-            </div>
-        </div>
-        <select class="select-control" aria-label="Сортировка">
+            <p class="meets">
+              Найдено гостиниц:<span>38</span>
+            </p>
+          </div>
+        <select class="select-control select-sort" aria-label="Сортировка.">
           <option value="cheap">Сначала дешёвые</option>
           <option value="popular">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
@@ -336,18 +337,22 @@
           </div>
         </div>
 
+    </section>
         <!-- Форма для подписки -->
-        <section class="newsletter newsletter-inner">
-          <h2 class="newsletter-title headings">Подпишитесь на рассылку</h2>
-          <p class="page-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+
+        <section class="newsletter-catalog">
+          <div class="newsletter-container">
+          <h2>Подпишитесь на рассылку</h2>
+          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="newsletter-email">Email</label>
-            <div class="field-container">
-              <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
+            <label for="newsletter-email">
+              <span class="visually-hidden">Ваш e-mail</span>
+            </label>
+            <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
                 id="newsletter-email" required>
-              <button class="button button-blue button-newsletter" type="submit">Подписаться</button>
-            </div>
-          </form>
+              <button class="button button-newsletter" type="submit">Подписаться</button>
+              </form>
+        </div>
         </section>
       </main>
 

@@ -1150,6 +1150,10 @@
 
   /*Каталог*/
 
+  .catalog-hotels-filter {
+    padding-bottom: 83px;
+  }
+
   .catalog-hotels {
     background-image: url("../images/catalog-back.jpg");
     background-size: 100% auto;
@@ -1165,18 +1169,18 @@
 
   .inner-header-title {
     margin: 0;
-  padding-top: 35px;
-  padding-bottom: 8px;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 78px;
-  color: #FFFFFF;
+    padding-top: 35px;
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;
   }
 
   .inner-header {
     display: flex;
     flex-direction: column;
-    width: 1200px;
+    width: 1060px;
     margin: 0 auto;
     margin-bottom: 40px;
   }
@@ -1184,38 +1188,36 @@
   /* Хлебные крошки */
   .breadcrumbs {
     display: flex;
+    position: relative;
     margin: 0;
     padding: 0;
     list-style: none;
-     font-size: 16px;
-    line-height: 21px;
-    list-style-type: none;
   }
 
   .breadcrumbs-item {
-    position: relative;
+    margin-right: 28px;
   }
 
   .breadcrumbs-link {
-    position: relative;
     display: block;
-    padding: 0 5px;
-    margin-right: 16px;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #ffffff;
+
   }
 
-  .breadcrumbs-home {
-    margin-left: 3px;
+  .breadcrumbs-link-home {
+    position: relative;
+    margin-top: 3px;
+    padding: auto;
+    margin: 0;
+    top: 2px;
+    ;
   }
 
   .breadcrumbs-link:hover {
     opacity: 0.6;
-  }
-
-  .breadcrumbs-link:focus:focus-visible {
-    opacity: 1;
-    box-shadow: 0 0 0 3px #83B3D3;
-    border-radius: 4px;
-    outline: none;
   }
 
   .breadcrumbs::after {
@@ -1236,7 +1238,37 @@
     display: flex;
     width: 1060px;
     margin: 0 auto;
+  }
 
+  .catalog-filter-container-left {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog-filter-container-right {
+    width: 557px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+
+  .catalog-filter-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    padding: 0;
+  }
+
+  .catalog-filter-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .control {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
   }
 
   .catalog-filter-list {
@@ -1252,12 +1284,6 @@
   .catalog-filter-price {
     font-family: inherit;
     list-style: none;
-  }
-
-  .catalog-filter-title {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
   }
 
   .catalog-filter-button {
@@ -1283,10 +1309,38 @@
 
   /* Сортировка */
 
-  .control {
-    display: flex;
-    align-items: center;
+  .catalog-filter-infrastructure {
+    width: 150px;
+    margin: 0;
+    margin-top: 0;
+    margin-right: 67px;
+    padding: 0;
+    border: 0;
+  }
+
+  .catalog-filter-type {
+    width: 180px;
+    margin: 0;
+    margin-right: 67px;
+    padding: 0;
+    border: 0;
+  }
+
+  .control-input {
+
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 19px;
     cursor: pointer;
+  }
+
+  .catalog-filter-price {
+    width: 287px;
+    margin: 0;
+    margin-right: 81px;
+    padding: 0;
+    border: 0;
   }
 
   /* Mark */
@@ -1345,24 +1399,61 @@
   }
 
   .catalog-sorting {
-    display: flex;
-    width: 1060px;
-    height: 49px;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    width: 350px;
+    margin-right: auto ;
   }
 
-  .catalog-sorting h2 {
-
-    width: 450px;
+  .meets {
     margin: 0;
-    margin-right: auto;
-    padding: 6px 0;
-    font-weight: 700;
     font-size: 30px;
-    line-height: 36px;
-    color: #000000;
+    line-height: 39px;
+    font-weight: 700;
     text-transform: uppercase;
+  }
+
+  .select-control {
+    font-family: "PT Sans", sans-serif;
+    font-weight: inherit;
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+    margin: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid #E6E6E6;
+    border-radius: 4px;
+    padding-right: 50px;
+    appearance: none;
+    background-image: url("../images/dropdown.svg");
+    background-repeat: no-repeat;
+    background-position: right 21px center;
+    background-color: #ffffff;
+  }
+
+  .select-sort {
+  width: 287px;
+  margin-right: 81px;
+  padding: 11px 19px;
+}
+
+  .select-control:hover {
+    border: 2px solid #83B3D3;
+    border-radius: 4px;
+  }
+
+  .select-control:focus {
+    border: 2px solid #83B3D3;
+    border-radius: 4px;border: 2px solid #E6E6E6;
+  }
+
+  .select-control:active {
+    border: 2px solid #E6E6E6;
+    border-radius: 4px;
+    opacity: 0.3;
+  }
+
+  .filter-result {
+    margin-bottom: 64px;
   }
 
   .card-view-button-container {
