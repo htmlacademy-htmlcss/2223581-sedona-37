@@ -267,20 +267,24 @@
 
   .welcome-split {
     display: flex;
-  flex-direction: column;
-  align-items: center;
-    position: relative;
+    flex-direction: column;
+    align-items: center;
     height: 485px;
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-color: #82b3d3;
+  background-color: #476b86;
 
+
+  }
+  .welcome {
+    padding-bottom: 80px;
   }
 
   .vector-welcome {
     margin-bottom: 25px;
-    margin-top: 51px;
+
+
   }
 
   .welcome-split::after {
@@ -345,15 +349,6 @@
     background-color: #83B3D3;
   }
 
-  .advantages-advices {
-    width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-
   .advantages-description {
     display: flex;
     flex-direction: column;
@@ -366,19 +361,28 @@
 
   /*Title*/
 
-  .advantages-title {
-
-    width: 175px;
-    margin: 0 auto;
-    padding-bottom: 29px;
-    text-align: center;
+  .slogan {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 36px;
     font-weight: 700;
+    text-transform: uppercase;
+    background-color: inherit;
+    margin-bottom: 31px;
+  }
+
+  .headings {
+    margin-top: 0;
+  }
+
+  .advantages-title {
     font-size: 24px;
     line-height: 28px;
-    color: #000000;
     text-transform: uppercase;
-
+    margin-top: 98px;
+    margin-bottom: 29px;
   }
+
 
   .advantages-title::after {
     display: block;
@@ -391,34 +395,10 @@
   }
 
 
-  .advantages-title-article {
-    color: #FFFFFF;
-  }
-
-
-  .advantages-description-article {
-    color: #FFFFFF;
-  }
-
-
-  .advantages-title-container {
-    width: 230px;
-    padding: 103px 85px;
-  }
-
-  .advantages-title-container-alternative {
-    padding-top: 113px;
-  }
-
   .advantages-image {
     height: 100%;
   }
 
-  /*Description*/
-  .advantages-description {
-    margin: 0;
-
-  }
 
   .advantages-advices {
     width: 1200px;
@@ -646,7 +626,7 @@
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
-    color: #000000;
+    color: #FFFFFF;
     text-align: center;
   }
 
@@ -656,7 +636,7 @@
     padding-bottom: 54px;
     font-size: 22px;
     line-height: 26px;
-    color: #000000;
+    color: #FFFFFF;
     font-weight: 400;
     text-align: center;
   }
