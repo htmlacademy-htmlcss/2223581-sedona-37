@@ -51,7 +51,7 @@
 
   .main-index {
     text-align: center;
-    line-height: 21px;
+
   }
 
   html {
@@ -270,19 +270,17 @@
     flex-direction: column;
     align-items: center;
     height: 485px;
-  background-image: url("../images/index-background.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-color: #476b86;
+    background-image: url("../images/index-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
 
 
   }
-  .welcome {
-    padding-bottom: 80px;
-  }
+
 
   .vector-welcome {
-    margin-bottom: 25px;
+    margin-top: 50px;
 
 
   }
@@ -320,7 +318,7 @@
 
   .advantages-item {
     width: 400px;
-    min-height: 384px;
+    min-height: 385px;
   }
 
   .advantages-item-box {
@@ -338,8 +336,15 @@
 
   .container-item-blue {
     margin: 0 auto;
-    width: 220px;
+    width: 230px;
+
   }
+
+  .container-item-blue h3 {
+
+    margin-top: 103px;
+  }
+
 
   .advantages-item-blue {
     display: flex;
@@ -347,6 +352,7 @@
     width: 1200px;
     color: #ffffff;
     background-color: #83B3D3;
+
   }
 
   .advantages-description {
@@ -354,33 +360,49 @@
     flex-direction: column;
     flex-grow: 1;
     margin: 0;
-    margin-bottom: 79px;
+
     font-size: 18px;
   }
 
 
   /*Title*/
 
-  .slogan {
-    display: inline-block;
+  .advantages h2 {
+    margin: 0 auto;
+    padding: 69px 70px 25px;
+    text-align: center;
+    font-weight: 700;
     font-size: 30px;
     line-height: 36px;
-    font-weight: 700;
+    color: #000000;
     text-transform: uppercase;
-    background-color: inherit;
-    margin-bottom: 31px;
   }
+
+  .advantages > p {
+    margin: 0 auto;
+    padding: 0 70px 69px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+    margin-bottom: 21px;
+  }
+
 
   .headings {
     margin-top: 0;
   }
 
   .advantages-title {
+    width: 175px;
+    margin: 0 auto;
+    padding-bottom: 29px;
+    text-align: center;
+    font-weight: 700;
     font-size: 24px;
     line-height: 28px;
+    margin-top: 114px;
     text-transform: uppercase;
-    margin-top: 98px;
-    margin-bottom: 29px;
   }
 
 
@@ -410,6 +432,19 @@
   }
 
   /* Рекомендации */
+
+  .services h2 {
+    margin: 0 auto;
+    padding: 64px 71px 24px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: uppercase;
+
+  }
+
 
   .advices {
     position: relative;
@@ -1210,7 +1245,7 @@
     position: relative;
     margin-top: 3px;
     padding:
-    margin: 0;
+      margin: 0;
     top: 2px;
     ;
   }
