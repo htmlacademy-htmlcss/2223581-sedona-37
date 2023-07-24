@@ -86,7 +86,7 @@
 
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <div class="catalog-filter-container-left">
-                <fieldset class="catalog-filter-infrastructure">
+                <fieldset class="filter-group catalog-filter-infrastructure">
                   <legend class="catalog-filter-title">Инфраструктура:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
@@ -175,9 +175,9 @@
         </section>
 
         <div class="sorting">
-          <div class="catalog-sorting">
+          <div class="catalog-sorting" data-test="catalog">
             <p class="meets">
-              Найдено гостиниц:<span>38</span>
+              Найдено гостиниц:<span> 38</span>
             </p>
           </div>
           <select class="select-control select-sort" aria-label="Сортировка.">
@@ -230,7 +230,7 @@
               <a class="hotel-card-link link" href="#">
                 <img class="hotel-card-image" src="images/hotel-2.jpg" width="300" height="212"
                   alt="Гостиница Villas At Poco Diablo.">
-                <h3 class="hotel-card-title">Villas At Poco Diablo</h3>
+                <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
               </a>
               <p class="frame-hotel-price">
                 <span class="frame-hotel">Гостиница</span>
@@ -254,7 +254,7 @@
               <a class="hotel-card-link link" href="#">
                 <img class="hotel-card-image" src="images/hotel-3.jpg" width="300" height="212"
                   alt="Гостиница Desert Quail Inn.">
-                <h3 class="hotel-card-title">Гостиница Desert Quail Inn</h3>
+                <h3 class="hotel-card-title">Desert Quail Inn</h3>
               </a>
               <p class="frame-hotel-price">
                 <span class="frame-hotel">Гостиница</span>
@@ -278,7 +278,7 @@
               <a class="hotel-card-link link" href="#">
                 <img class="hotel-card-image" src="images/hotel-4.jpg" width="300" height="212"
                   alt="Гостиница GreenTree Inn.">
-                <h3 class="hotel-card-title">Гостиница GreenTree Inn</h3>
+                <h3 class="hotel-card-title">GreenTree Inn</h3>
               </a>
               <p class="frame-hotel-price">
                 <span class="frame-hotel">Гостиница</span>
@@ -329,7 +329,7 @@
 
         <!-- Форма для подписки -->
 
-        <section class="newsletter-catalog">
+        <section class="newsletter-catalog" data-test="subscribe">
           <div class="newsletter-container">
             <h2>Подпишитесь на рассылку</h2>
             <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
