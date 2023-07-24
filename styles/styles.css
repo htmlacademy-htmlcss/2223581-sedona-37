@@ -637,7 +637,7 @@
 
   .newsletter-container {
     margin: 0 auto;
-    padding: 96px 70px 104px;
+    padding: 129px 70px 80px;
   }
 
   .newsletter h2 {
@@ -1958,9 +1958,9 @@ margin-top: -2px;
     flex-direction: column;
     justify-content: space-around;
     box-sizing: border-box;
-    width: 55px;
-    padding-top: 17px;
-    padding-bottom: 17px;
+    width: 60px;
+    padding-top: 21px;
+    padding-bottom: 16px;
   }
 
   .pagination-current {
@@ -1985,15 +1985,14 @@ margin-top: -2px;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
-    margin: 0;
-    padding-bottom: 20px;
+
     color: #000000;
     text-transform: uppercase;
   }
 
   .newsletter-catalog p {
     margin: 0;
-    padding-bottom: 54px;
+    padding-bottom: 50px;
     font-size: 22px;
     line-height: 26px;
   }
