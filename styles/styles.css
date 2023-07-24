@@ -684,8 +684,9 @@
   .newsletter-form {
     display: grid;
     grid-template-columns: 452px 232px;
-    height: 52px;
+    height: 53px;
     box-sizing: border-box;
+  justify-content: center;
   }
 
 
@@ -708,109 +709,125 @@
 
   .page-footer-container {
     display: flex;
-    width: 1100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1200px;
+    min-height: 50px;
     margin: 0 auto;
-    padding: 25px 0;
-    align-items: center;
+    padding: 40px 70px 30px;
+    box-sizing: border-box;
 
   }
 
   .footer-social {
-    max-width: 200px;
-    margin-right: auto;
+    width: 300px;
   }
 
   .footer-social-list {
-    display: flex;
-    flex-wrap: nowrap;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    margin-left: 12px;
+    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 5px 0;
+  margin-left: auto;
   }
 
-  .footer-social-item:nth-child(3n) {
-    margin-right: 0;
+  .footer-social-item a {
+    position: relative;
+    display: block;
+    padding: 20px 24px;
   }
 
-
-  .footer-social-item {
-    width: 40px;
-    height: 40px;
-    margin-right: 3px;
-    box-sizing: border-box;
+  .footer-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: #83b3d3
   }
+
 
   .footer-social-link {
+    position: relative;
+    display: block;
+    padding: 20px 24px;
+
+  }
+  .footer-icon:not([disabled]):hover {
+    fill: #68a2ca;
+  }
+
+  .footer-social-link:not([disabled]):focus {
+    outline: 3px solid #83b3d3;
+  }
+
+  .footer-social-link:not([disabled]):focus .footer-icon {
+    fill: #68a2ca;
+  }
+
+  .footer-social-link:not([disabled]):active {
+    outline: none;
+  }
+
+  .footer-social-link:not([disabled]):active .footer-icon {
+    fill: rgba(104, 162, 202, 0.3);
+  }
+
+  .footer-contacts-container {
     display: flex;
-    width: 40px;
-    height: 40px;
-    fill: #83B3D3;
-    align-items: center;
-
-  }
-
-  .footer-social-link svg {
-    margin: 0 auto;
-  }
-
-  .footer-social-link:hover {
-    fill: #68A2CA;
-  }
-
-  .footer-social-link:focus {
-    box-shadow: inset 0 0 0 3px #83B3D3;
-    border-radius: 10px;
-  }
-
-  .footer-social-link:active {
-    opacity: 0.3;
-    box-shadow: none;
+    flex-wrap: wrap;
+    justify-content: end;
+    width: 300px;
   }
 
   .footer-contacts {
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    width: 460px;
   }
 
   .footer-contacts-phone {
     display: block;
-    margin: 0 auto;
     font-size: 40px;
     line-height: 40px;
-    text-decoration: inherit;
+    width: 333px;
+    margin-right: 63px;
+    padding: 5px 0;
     color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: right;
     font-style: normal;
-    padding: 15px;
-    text-align: center;
   }
 
-  .footer-contacts-phone:hover {
-    color: #756257;
+  .footer-contacts-phone:not([disabled]):hover {
+    color: #756157;
   }
 
-  .footer-contacts-phone:focus {
-    box-shadow: inset 0 0 0 3px #83B3D3;
-    border-radius: 10px;
-    color: #756257;
+  .footer-contacts-phone:not([disabled]):focus {
+    color: #756157;
+    outline: 3px solid #83b3d3;
   }
 
-  .footer-contacts-phone:active {
-    opacity: 0.3;
-    box-shadow: none;
+  .footer-contacts-phone:not([disabled]):active {
+    color: rgba(117, 97, 87, 0.3);
+    outline: none;
   }
+
 
   .footer-logo {
-    width: 160px;
-    margin-left: 140px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    display: block;
+    width: 115px;
+    height: 34px;
+    padding-top: 8px;
   }
 
-  .footer-logo:focus {
-    box-shadow: inset 0 0 0 3px #756157;
-    border-radius: 10px;
-    outline: none;
+  .footer-logo:not([disabled]):focus {
+    outline: 3px solid #83b3d3;
   }
 
   .footer-logo:active {
@@ -818,13 +835,6 @@
     box-shadow: none;
   }
 
-  .footer-social-logo {
-    display: inline-flex;
-    padding: 0 40px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
 
   .footer-logo-htmlacademy {
     fill: #000000;
@@ -840,12 +850,9 @@
 
   .footer-logo:active {
     opacity: 0.3;
-    box-shadow: none;
+
   }
 
-  .footer-contacts-container {
-    width: 500px;
-  }
 
   /* Модальное окно */
   .modal-container {
